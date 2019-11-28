@@ -25,7 +25,7 @@ class Kitten extends Component {
 
                     <input name="newHobby" onChange={(event) => this.handleChange(event)} type="text"/>
                     <button onClick={_ => this.props.addHobby(this.props.id, this.state.newHobby)}
-                            type="submit">Add New Kitten</button>
+                            type="submit">Add New Hobby</button>
 
                     <br/>
                     <Link to="/">Back</Link>

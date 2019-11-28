@@ -5,9 +5,13 @@
   "scripts": {
     "start": "cd server && node app.js",
     "dev": "cd client && npm start",
-    "test": "cd client && npm test",
-    "preinstall": "cd server && npm install",
+    "test": "cd test && npm test",
+    "preinstall": "cd server && npm install && cd ../test && npm install",
     "install": "cd client && npm install",
     "build": "cd client && npm run build"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "jest": "^24.9.0"
   }
 }

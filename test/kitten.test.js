@@ -31,6 +31,6 @@ it('adds several hobbies correctly', () => {
     let state = kittens([{id: 1, name: "Garfield", hobbies: []}], action);
     state = kittens(state, action);
     state = kittens(state, action);
-    expect(state[0].hobbies.length).toBe(3); // Breaking the test!!
+    expect(state[0].hobbies.length).toBe(4); // Breaking the test!!
 });
 
